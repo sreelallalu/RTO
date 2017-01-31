@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="150dp">
+           <Button
+               android:background="@drawable/layout_bg"
+               android:id="@+id/vrefresh"
+               android:layout_width="80dp"
+               android:layout_height="35dp"
+               android:text="refresh"
+               android:layout_alignBottom="@+id/textView"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+
+            />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:textSize="20dp"
+               android:textColor="#001353"
+               android:text="Vehicle checking"
+               android:layout_marginTop="23dp"
+               android:layout_alignParentTop="true"
+               android:layout_alignLeft="@+id/vehi_no"
+               android:layout_alignStart="@+id/vehi_no"
+               android:layout_marginLeft="62dp"
+               android:layout_marginStart="62dp"
+               android:id="@+id/textView" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/vehi_no"
+        android:maxLength="13"
+        android:hint="type_vehicle No"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/arrow14x"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:id="@+id/vehi_ok"
+        android:layout_alignBottom="@+id/vehi_no"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+       </RelativeLayout>
+   </LinearLayout>
+    <TextView
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/bvehi"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Owner Name :"
+               />
+
+                <TextView
+                    android:textColor="#fef78b0f"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Penalty :"
+                  />
+                <TextView
+                    android:textColor="#c6d17812"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Engine No :"
+                   />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/type3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Type of vehicle :"
+                />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/type33"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Vehicle classfn :"
+                />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Address :"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:layout_gravity="right"
+                android:id="@+id/vehi_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/vehi_penalty"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+            android:textColor="#9f80f9"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:id="@+id/vehi_engno"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text=""
+            />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/type_regno"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/vehi_classf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/vehi_addrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

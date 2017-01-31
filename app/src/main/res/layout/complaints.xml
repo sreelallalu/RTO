@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="complaints registration"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/clearqw"
+        android:layout_alignRight="@+id/com_view" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="License No:"/>
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+         android:gravity="center"
+
+    android:orientation="horizontal">
+
+    <AutoCompleteTextView
+        android:inputType="number"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_lic_no1"
+        android:gravity="center"
+              android:maxLength="2"
+
+        />
+    <EditText
+        android:gravity="center"
+        android:hint=""
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_lic_no2"
+        android:layout_gravity="center_horizontal"
+        android:maxLength="6"
+        android:inputType="number"
+       />
+    <AutoCompleteTextView
+
+        android:hint=""
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_lic_no3"
+        android:layout_gravity="center_horizontal"
+        android:maxLength="4"
+        android:inputType="number"
+    />
+
+
+</LinearLayout>
+    <EditText
+        android:hint="vehicle no:"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_vehi_no"
+        android:layout_alignLeft="@+id/com_lic_no"
+        android:layout_alignStart="@+id/com_lic_no"
+        android:maxLength="15"
+        android:layout_below="@+id/com_lic_no" />
+
+    <AutoCompleteTextView
+        android:layout_gravity="center"
+        android:id="@+id/com_offn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="offence"
+        android:layout_below="@+id/com_vehi_no"
+        android:layout_alignLeft="@+id/com_vehi_no"
+        android:layout_alignStart="@+id/com_vehi_no"></AutoCompleteTextView>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+android:layout_marginLeft="40dp"
+        android:background="@drawable/csav"
+        android:id="@+id/com_camera"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/com_offn"
+        android:layout_alignLeft="@+id/com_vehi_no" />
+
+
+    <ImageView
+        android:layout_marginTop="26dp"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+
+android:layout_marginLeft="80dp"
+        android:id="@+id/com_view"
+        android:layout_alignTop="@+id/com_camera"
+        android:layout_toRightOf="@+id/com_send"
+        android:layout_toEndOf="@+id/com_send" />
+
+
+</LinearLayout>
+
+    <Button
+        android:background="@drawable/roundshapebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+      android:layout_gravity="center"
+        android:id="@+id/com_send"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+        android:background="@drawable/layout_bg"
+android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="clear"
+
+        android:id="@+id/clearqw"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</LinearLayout>

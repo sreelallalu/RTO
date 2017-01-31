@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/registeredit"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+       android:hint=" unique code"
+        android:layout_marginTop="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:id="@+id/okbuttoni"
+        android:layout_below="@+id/registeredit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#ff0606"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/checkingreg"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/okbuttoni"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#112ff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="REGISTER"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/okbuttoni"
+        android:layout_alignLeft="@+id/registeredit"
+        android:layout_alignStart="@+id/registeredit"
+        android:layout_marginBottom="63dp" />
+
+</RelativeLayout>

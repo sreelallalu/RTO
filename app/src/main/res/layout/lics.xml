@@ -1,0 +1,213 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <Button
+                android:background="@drawable/layout_bg"
+                android:id="@+id/vrefresh1"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="refresh"
+                android:layout_alignBottom="@+id/fcv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:id="@+id/fcv"
+                android:textColor="#001353"
+                android:text="License checking"
+                android:layout_marginTop="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/lic_no"
+                android:layout_alignStart="@+id/lic_no"
+                android:layout_marginLeft="62dp"
+                android:layout_marginStart="62dp" />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/lic_no"
+                android:maxLength="14"
+                android:inputType="textPersonName"
+                  android:hint="type_license No"
+                android:layout_marginTop="76dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:id="@+id/lic_send"
+                android:background="@drawable/arrow14x"
+                android:layout_alignBottom="@+id/lic_no"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/bvehi1"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:id="@+id/ltext1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Name :"
+                />
+
+            <TextView
+                android:textColor="#fef78b0f"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/ltext3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Penalty :"
+                />
+            <TextView
+                android:textColor="#fef78b0f"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/balace"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Balace valid point :"
+                />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/ltext4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Exp.validity :"
+                />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/typelsno"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Class of vehicle :"
+                />
+            <TextView
+                android:textColor="#c6d17812"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/ltext2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Address :"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:layout_gravity="right"
+                android:id="@+id/lic_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/lic_penatlty"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/validpoint"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/lic_regno"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/typelicense"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+            <TextView
+                android:textColor="#9f80f9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/lic_addrs"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
